@@ -28,7 +28,7 @@ The **Head** holds the meta data of the site. This includes links to other files
 
 Let's look at an example of the head tag for our coding exercise. 
 
-``` html=
+``` html
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
@@ -38,7 +38,7 @@ The **Body** holds the rendered content of the website. This is what the user wi
 
 Let's look at an example of the head tag for our coding exercise.
 
-```html=
+```html
 <body>
     <div id="button" class="share__button">
       <span class="share__button__cover">
@@ -62,7 +62,7 @@ For example: an id would be given to a button that is suppose to execute a speci
 
 Let's look at the syntax for CSS.
 
-```css=
+```css
 selector {
     property: value;
     property: value;
@@ -73,7 +73,7 @@ selector {
 The **Selector** can either be an html element, a class, or an id. We use the selctor do do exactly what you think. Target something and apply styles. 
 
 For Example:
-```css=
+```css
 body {
   margin:0;
   padding:0;
@@ -99,7 +99,7 @@ Let's head on over to [Codepen](https://codepen.io/). This is an online frontend
 Let's get down the base of our HTML and talk about the elements.
 In our head we are linking to an external library that will give us access to cool icons! 
 
-```html=
+```html
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
@@ -117,7 +117,7 @@ In our head we are linking to an external library that will give us access to co
 
 Let's add in our Font awesome links and icons now.
 
-```html=
+```html
 <!--   facebook     -->
       <a class="share__icon--facebook" href="#">
         <i class="fab fa-facebook-f" ></i>
@@ -142,7 +142,7 @@ And that's it! Take note of the way it looks so far. We only have our structure.
 
 First we will target and apply styles to the body element. 
 
-```css=
+```css
 body {
   margin:0;
   padding:0;
@@ -159,7 +159,7 @@ body {
 
 Next is to get our button into postiion and shapped out.
 
-```css=
+```css
 .share__button {
   width: 280px;
   height: 80px;
@@ -178,7 +178,7 @@ Next is to get our button into postiion and shapped out.
 
 Let's add that grow hover effect! For this we will be using a psuedo selector. 
 
-```css=
+```css
 .share__button:hover{
   transform: scale(1.1);
 }
@@ -187,7 +187,7 @@ Let's add that grow hover effect! For this we will be using a psuedo selector.
 *As we can see now, when we hover over the button we get a small interaction that grows the button.*
 
 Next step is pull out that cover and over lay it on top.
-```css=
+```css
 .share__button__cover {
   position: absolute;
   font-size: 1.6em;
@@ -204,7 +204,7 @@ Next step is pull out that cover and over lay it on top.
 ```
 Looking good! But we need to add a hover effect to the cover to transition it.
 
-```css=
+```css
 .share__button:hover .share__button__cover {
   transform: translateX(-100%);
   transition-delay: .1s;
@@ -214,7 +214,7 @@ Looking good! But we need to add a hover effect to the cover to transition it.
 
 Time for our little icons. 
 
-```css=
+```css
 .share__button a {
   flex: 1;
   font-size: 26px;
@@ -232,7 +232,7 @@ Flex gives us alot of power for positioning. `flex: 1` will make sure all the el
 
 We will now be adding two more hover selctions. One on the button to make the icons appear. And another on the icons themselves to make them grow.
 
-```css=
+```css
 .share__button:hover a {
   opacity: 1;
   transform: translateX(0);
@@ -246,7 +246,7 @@ We will now be adding two more hover selctions. One on the button to make the ic
 
 Lastly, we will add specific styles for each icon for their color values.
 
-```css=
+```css
 .share__icon--facebook:hover{
   background: #3b5998;
 }
